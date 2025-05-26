@@ -15,3 +15,10 @@
 
             
         }
+
+        function lesson3() {
+            var num1 = 15;
+            var num2 = 35;
+            document.getElementById("math").innerHTML= num1 + " x " + num2 + " = " + (num1 * num2);
+            
+        }
