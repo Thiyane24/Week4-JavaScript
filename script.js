@@ -50,3 +50,13 @@ document.getElementById("result4").innerHTML="Wrong Password, please try again."
     document.getElementById("addition7").innerHTML = num1 + " + " + num2 + " = " + (num1 + num2);
     
    }
+
+   function runLesson8() {
+    document.getElementById("addition8").innerHTML= "10 + 7 = " + addNumbersReturn(10, 7);
+   }
+
+   function addNumbersReturn(num1, num2) {
+    return num1 + num2 ;
+    
+    
+   }
