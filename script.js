@@ -36,4 +36,12 @@ document.getElementById("result4").innerHTML="Wrong Password, please try again."
 
    }
 
-   
+   function toggleText() {
+    var toggle = document.getElementById("toggle");
+    if (toggle.innerHTML == "JavaScript"){
+        toggle.innerHTML="Is awesome!";
+
+    } else {
+        toggle.innerHTML="JavaScript";
+    }
+   }
