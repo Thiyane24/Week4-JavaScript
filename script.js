@@ -45,3 +45,8 @@ document.getElementById("result4").innerHTML="Wrong Password, please try again."
         toggle.innerHTML="JavaScript";
     }
    }
+
+   function addNumbers(num1, num2) {
+    document.getElementById("addition7").innerHTML = num1 + " + " + num2 + " = " + (num1 + num2);
+    
+   }
