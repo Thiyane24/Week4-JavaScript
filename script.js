@@ -1,9 +1,10 @@
- function lesson1(){
+//Lesson 1
+function lesson1(){
             document.getElementById("heading1").innerHTML="This is JavaScript!";
                 document.getElementById("text1").innerHTML="How are you?";
 
         }
-
+//Lesson 2 
         function lesson2() {
             var message1 = "Hello everyone!";
             var message2 ="I love JavaScript!";
@@ -15,13 +16,14 @@
 
             
         }
-
+//Lesson 3
         function lesson3() {
             var num1 = 15;
             var num2 = 35;
             document.getElementById("math").innerHTML= num1 + " x " + num2 + " = " + (num1 * num2);
             
         }
+//Lesson 4
 function lesson4() {
     
 
@@ -35,7 +37,7 @@ document.getElementById("result4").innerHTML="Wrong Password, please try again."
    
 
    }
-
+//Lesson 6
    function toggleText() {
     var toggle = document.getElementById("toggle");
     if (toggle.innerHTML == "JavaScript"){
@@ -45,12 +47,12 @@ document.getElementById("result4").innerHTML="Wrong Password, please try again."
         toggle.innerHTML="JavaScript";
     }
    }
-
+//Lesson 7
    function addNumbers(num1, num2) {
     document.getElementById("addition7").innerHTML = num1 + " + " + num2 + " = " + (num1 + num2);
     
    }
-
+//Lesson 8
    function runLesson8() {
     document.getElementById("addition8").innerHTML= "10 + 7 = " + addNumbersReturn(10, 7);
    }
@@ -60,6 +62,7 @@ document.getElementById("result4").innerHTML="Wrong Password, please try again."
 
     
    }
+   //Lesson 9
 var globalVariable = "I am a global variable";
     
    function demonstrateScope() {
