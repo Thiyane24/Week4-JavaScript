@@ -57,6 +57,21 @@ document.getElementById("result4").innerHTML="Wrong Password, please try again."
 
    function addNumbersReturn(num1, num2) {
     return num1 + num2 ;
+
     
+   }
+var globalVariable = "I am a global variable";
+    
+   function demonstrateScope() {
+    var localVariable = "I am a local variable";
+    document.getElementById("scopeOutput").innerHTML = 
+    "Global: "+ globalVariable + "  " +
+    "Local: " + localVariable +"  " +
+    "Local variables only exist inside their function!";
+    
+   }
+
+   function demonstrateLocalScope() {
+    document.getElementById("scopeOutput").innerHTML = localVariable;
     
    }
