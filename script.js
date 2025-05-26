@@ -22,3 +22,16 @@
             document.getElementById("math").innerHTML= num1 + " x " + num2 + " = " + (num1 * num2);
             
         }
+function lesson4() {
+    
+
+   var userPassword = document.getElementById("password").value;
+   
+   if (userPassword == "007"){
+document.getElementById("result4").innerHTML="Correct Password, you are logged in!";
+   } else {
+document.getElementById("result4").innerHTML="Wrong Password, please try again.";
+   }
+   
+
+   }
