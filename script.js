@@ -97,3 +97,37 @@ var globalVariable = "I am a global variable";
          document.getElementById("message").innerHTML="Wrong details, please try again";
       }
    }
+
+   function btnPressed() {
+      var weatherSelected = document.getElementById("weather").value;
+      var advice;
+
+      switch(weatherSelected){
+         case "sunny" :
+            advice = "Wear your sunglasses";
+            break;
+         case "windy" :
+            advice = "Wear a jacket";
+            break;
+            case "rainy" :
+               advice ="Take your umbrella";
+               break;
+            case "snowy" :
+               advice ="Dress warm clothes";
+               break;
+            case "cloudy" :
+               advice = "Beware of the weather";
+               break;
+      }
+      document.getElementById("outputText").innerHTML="Weather advice : " + advice;
+   }
+
+   var text1 ="4";
+   var text2 = "3";
+   var num1 = stringToNumber(text1);
+   var num2 = stringToNumber(text2);
+   document.getElementById("output").innerHTML= num1 + num2;
+
+   function stringToNumber(text) {
+      return parseInt(text);
+   }
