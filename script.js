@@ -68,8 +68,8 @@ var globalVariable = "I am a global variable";
    function demonstrateScope() {
     var localVariable = "I am a local variable";
     document.getElementById("scopeOutput").innerHTML = 
-    "Global: "+ globalVariable + "  " +
-    "Local: " + localVariable +"  " +
+    "Global: "+ globalVariable + "      " +
+    "Local: " + localVariable +"     " +
     "Local variables only exist inside their function!";
     
    }
@@ -77,4 +77,23 @@ var globalVariable = "I am a global variable";
    function demonstrateLocalScope() {
     document.getElementById("scopeOutput").innerHTML = localVariable;
     
+   }
+
+   function verifyUser() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("pw").value;
+
+      checkUserCreds(username, password);
+   }
+
+   function checkUserCreds(username, password) {
+      var systemUsername = "Thiyane";
+      var systemPw = "007";
+      if(username == systemUsername && password == systemPw){
+         document.getElementById("message").innerHTML="Correct, you are logged in";
+
+      }
+      else{
+         document.getElementById("message").innerHTML="Wrong details, please try again";
+      }
    }
